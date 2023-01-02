@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #ffffff);
+}
+.logo.vanilla:hover {
+    filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.imgContainer {
+    place-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.bg {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navContainer {
+    width: 95%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5%;
+}
+
+.menuList {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#gradient-canvas {
+    width: 100%;
+    height: 100%;
+    --gradient-color-1: #231942;
+    --gradient-color-2: #5e548e;
+    --gradient-color-3: #9f86c0;
+    --gradient-color-4: #e0b1cb;
+}
